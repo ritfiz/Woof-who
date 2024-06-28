@@ -1,0 +1,97 @@
+html {
+    min-width: 500px;
+    height: 600px;
+    background-color: antiquewhite;
+    margin: 15px;
+}
+
+h1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+#score{
+    display: flex;
+    flex-direction: column;
+}
+#high-score {
+    font-size: 12px;
+}
+
+#dogContainer {
+    margin-bottom: 10px;
+    height: 375px;
+    background: #fff2e1;
+    text-align: center;
+}
+
+#dogContainer .win {
+    font-size: 72px;
+    color: #41d741;
+    height: 100%;
+    align-content: center;
+}
+
+#dogContainer .lose {
+    font-size: 65px;
+    color: #ff3705;
+    height: 100%;
+    align-content: center;
+}
+
+
+.options{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+button {
+    width: 100%;
+    text-transform: capitalize;
+    height: 40px;
+    cursor: pointer;
+}
+img {
+    max-width: 100%;
+}
+
+#dogContainer img {
+    max-height: 375px;
+    width:100%;
+    height:100%;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.loader {
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+    opacity: 1;
+    text-align: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    animation: breathing 2s ease-in-out infinite;
+}
+
+.content {
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+@keyframes breathing {
+    0% {
+      transform: scale(0.8);
+    }
+  
+    60% {
+      transform: scale(1);
+    }
+  
+    100% {
+      transform: scale(0.8);
+    }
+  }
