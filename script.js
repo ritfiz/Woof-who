@@ -100,7 +100,7 @@ function getNewDog() {
 function select3AndAddAnswer(breed, otherBreeds) {
   const numbers = Array(otherBreeds.length)
     .fill()
-    .map((_, index) => index + 1);
+    .map((_, index) => index);
   numbers.sort(() => Math.random() - 0.5);
   const indexes = numbers.slice(0, 3);
   let result = [];
