@@ -77,6 +77,11 @@ img {
     animation: breathing 2s ease-in-out infinite;
 }
 
+.footnote {
+    position: absolute;
+    bottom: 15px;
+}
+
 .content {
     opacity: 0;
     transition: all 0.5s ease-in-out;
